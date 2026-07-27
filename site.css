@@ -1065,6 +1065,13 @@ h1 {
   margin-top: 3rem;
 }
 
+.topbar,
+.home .topbar { background: rgba(76, 35, 29, .94); }
+.button.primary { color: #4B2119; background: linear-gradient(180deg, #FFE26A, #F5B53F); box-shadow: 0 12px 30px rgba(184, 92, 58, .34); }
+.game-hero { background: radial-gradient(circle at 83% 16%, rgba(245, 204, 75, .52), transparent 25rem), radial-gradient(circle at 12% 82%, rgba(215, 91, 53, .46), transparent 24rem), linear-gradient(145deg, #4A211C, #9E3F2C 54%, #EAA33C); }
+.languages-band { background: linear-gradient(145deg, #7A3028, #C65439 52%, #F5CC4B); }
+.final-game-cta { background: linear-gradient(145deg, #3D1D1B, #873326 50%, #D89335); }
+
 @media (max-width: 900px) {
   .game-hero-grid,
   .section-heading.wide,
