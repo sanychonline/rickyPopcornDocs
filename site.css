@@ -1175,3 +1175,15 @@ h1 {
     max-width: 42vw;
   }
 }
+
+/* Shared support and legal pages use Ricky Popcorn's cinema-red and popcorn-gold palette. */
+.topbar, .home .topbar { background: rgba(74, 33, 28, .94); }
+body:not(.home) { background: radial-gradient(circle at 12% 12%, rgba(245, 204, 75, .38), transparent 22rem), radial-gradient(circle at 88% 18%, rgba(234, 163, 60, .3), transparent 24rem), linear-gradient(180deg, #FFFDF8, #FFF0C7 54%, #F6D69A); }
+.legal-hero { background: radial-gradient(circle at 82% 16%, rgba(245, 204, 75, .54), transparent 23rem), linear-gradient(145deg, #4A211C, #9E3F2C 53%, #EAA33C); }
+.summary { border-color: rgba(158, 63, 44, .3); background: rgba(245, 204, 75, .22); }
+.toc, .stat-card, .faq details { border-color: rgba(158, 63, 44, .23); background: rgba(255, 253, 247, .82); }
+.faq details[open] { background: #FFFFFF; box-shadow: 0 14px 36px rgba(74, 33, 28, .13); }
+.document p, .document li, .faq-answer { color: #654639; }
+.page-card { background: linear-gradient(145deg, #4A211C, #873326 55%, #D89335); }
+.page-card::after { color: #FFE877; }
+.footer { background: #311714; }
