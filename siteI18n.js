@@ -1,5 +1,5 @@
 (() => {
-  const catalog = window.Ricky PopcornPageTranslations;
+  const catalog = window.RickyPopcornPageTranslations;
   if (!catalog) return;
   const translations = Object.fromEntries(
     Object.entries(catalog.locales).map(([locale, values]) => [
@@ -48,7 +48,7 @@
   };
   const supported = languages.map(([code]) => code);
   const aliases = { pt: "pt-BR", zh: "zh-Hans" };
-  const storageKey = "ricky-popcorn-language";
+  const storageKey = "rickyPopcorn-language";
 
   function normalize(value) {
     if (!value) return null;
@@ -92,7 +92,7 @@
   const requested = normalize(params.get("lang"));
   const saved = normalize(
     localStorage.getItem(storageKey) ||
-    localStorage.getItem("ricky-popcorn-support-language")
+    localStorage.getItem("rickyPopcorn-support-language")
   );
   const preferred = navigator.languages?.map(normalize).find(Boolean);
   const initial = requested || saved || preferred || "en";
