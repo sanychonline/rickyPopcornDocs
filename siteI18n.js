@@ -1,7 +1,6 @@
 (() => {
   const catalog = window.RickyPopcornPageTranslations;
   if (!catalog) return;
-  const sourceAliases = catalog.aliases || {};
   const translations = Object.fromEntries(
     Object.entries(catalog.locales).map(([locale, values]) => [
       locale,
@@ -99,8 +98,7 @@
   const initial = requested || saved || preferred || "en";
 
   function translated(strings, original) {
-    const source = sourceAliases[original] || original;
-    return strings[source] || translations.en[source] || original;
+    return strings[original] || translations.en[original] || original;
   }
 
   function apply(locale, updateUrl = true) {
