@@ -1,6 +1,6 @@
 # Ricky Popcorn Docs
 
-Public product and support site for **Ricky Popcorn** / **Єнотик Попкорн**. The character is **Єнотик Попкорн**, catching falling popcorn in a three-lane arcade game.
+Public product and support site for **Ricky Popcorn** / **Єнотик Попкорн**. The character is **Єнотик Попкорн**, collecting popcorn in a movie-night themed three-lane arcade run.
 
 ## Site content
 
