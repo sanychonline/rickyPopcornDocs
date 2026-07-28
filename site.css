@@ -738,8 +738,9 @@ h1 {
   z-index: 2;
   width: min(100%, 560px);
   border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 0;
   box-shadow: 0 36px 100px rgba(0, 0, 0, 0.42);
+  display: block;
   transform: rotate(1deg);
 }
 
