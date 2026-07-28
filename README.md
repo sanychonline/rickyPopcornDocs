@@ -1,17 +1,16 @@
-# popcornVille Docs
+# Ricky Popcorn Docs
 
-Official website for **Ricky Popcorn** / **Ricky Popcorn**, an iOS arcade game starring Ricky.
+Public product and support site for **Ricky Popcorn** / **Єнотик Попкорн**. The character is **Єнотик Попкорн**, catching falling popcorn in a three-lane arcade game.
 
-## Main character
+## Site content
 
-The game's main character is **Ricky** (**Рікі**).
+- Uses Ricky Popcorn app assets: character, popcorn, game background, icon, and logo.
+- Keeps the cinema-red and popcorn-gold palette consistent on `index.html`, `support.html`, `privacy.html`, and `terms.html`.
+- Shows the approved Docs screenshots: launch art without a spinner, active gameplay with falling popcorn and no Game Over or banner, and English settings.
+- Provides localized support in 17 interface languages.
 
-## Pages
+## Deployment
 
-- `index.html` — product landing page
-- `support.html` — localized support in 17 languages
-- `privacy.html` — privacy policy
-- `terms.html` — terms of use
+The static public site deploys from `main` through `.github/workflows/pages.yml`.
 
-The site is static and deployed to GitHub Pages through
-`.github/workflows/pages.yml`.
+https://sanychonline.github.io/rickyPopcornDocs/
