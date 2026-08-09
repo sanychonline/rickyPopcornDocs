@@ -736,7 +736,9 @@ h1 {
 .hero-character img {
   position: relative;
   z-index: 2;
-  width: min(100%, 560px);
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 36px 100px rgba(0, 0, 0, 0.42);
@@ -1042,36 +1044,37 @@ h1 {
 }
 
 .final-game-cta {
-  min-height: 690px;
+  min-height: 520px;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(360px, 1.18fr);
   align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(3rem, 6vw, 5rem) max(7vw, 1.5rem);
   overflow: hidden;
-  color: var(--white);
-  background: linear-gradient(145deg, #21140d, #5a3316 52%, #2f6f69);
+  color: #2b1a0d;
+  background:
+    radial-gradient(circle at 20% 28%, rgba(255, 210, 91, 0.48), transparent 18rem),
+    linear-gradient(145deg, #fff0bd, #f2c05c 56%, #88b9a6);
 }
 
 .final-game-cta > img {
-  width: 100%;
-  height: 690px;
+  width: min(100%, 330px);
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 30%;
+  justify-self: end;
+  border-radius: 28px;
+  box-shadow: 0 28px 64px rgba(83, 45, 13, 0.24);
 }
 
 .final-game-cta > div {
-  padding: 4rem 7vw;
+  max-width: 560px;
+  padding: 0;
 }
 
 .final-game-cta .button {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
-
-.topbar,
-.home .topbar { background: rgba(76, 35, 29, .94); }
-.button.primary { color: #4B2119; background: linear-gradient(180deg, #FFE26A, #F5B53F); box-shadow: 0 12px 30px rgba(184, 92, 58, .34); }
-.game-hero { background: radial-gradient(circle at 83% 16%, rgba(245, 204, 75, .52), transparent 25rem), radial-gradient(circle at 12% 82%, rgba(215, 91, 53, .46), transparent 24rem), linear-gradient(145deg, #4A211C, #9E3F2C 54%, #EAA33C); }
-.languages-band { background: linear-gradient(145deg, #7A3028, #C65439 52%, #F5CC4B); }
-.final-game-cta { background: linear-gradient(145deg, #3D1D1B, #873326 50%, #D89335); }
 
 @media (max-width: 900px) {
   .game-hero-grid,
@@ -1116,10 +1119,13 @@ h1 {
 
   .final-game-cta {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
   .final-game-cta > img {
-    height: 480px;
+    width: min(70%, 280px);
+    justify-self: center;
   }
 }
 
